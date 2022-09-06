@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const Fridge = styled.div`
     margin-top:70px;
-    margin-left:5px;
+    margin-left:30px;
     padding: 10px;
     max-width: 250px;
     width: 250px;
     border-radius: 10px;
     border: 2px solid black;
-    min-height: 200px;
+    height: 100%;
+    
 `;
 
 export const ListName = styled.h2`

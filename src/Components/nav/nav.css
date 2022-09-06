@@ -1,6 +1,6 @@
 * {
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-weight: 600;
+
 }
 .navbar {
    background-color: #E2E2E2;
@@ -29,7 +29,7 @@ h3 {
 }
 
 button {
-   background-color: #919191;
+
    border: none;
    padding: 0.5rem;
 

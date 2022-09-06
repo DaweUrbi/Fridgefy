@@ -4,7 +4,7 @@ export const All_part_u = styled.div`
   display: flex;
   flex: 1 1;
   text-align: center;
-  margin: 1%;
+
 `;
 
 export const All_div = styled.div`
@@ -13,12 +13,11 @@ export const All_div = styled.div`
 `;
 export const Search_bar = styled.input`
   width: 50%;
-  border: 3px solid #2d2e2e;
+  border: 1.5px solid black;
   padding: 1rem;
   height: 1rem;
-  border-radius: 5px 0 0 5px;
   outline: none;
-  color: #9dbfaf;
+
 `;
 
 export const Check_boxes = styled.input`
@@ -42,7 +41,9 @@ export const Cards = styled.div`
     display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin: 1%;
+  justify-content: center;
+  font-weight: bold;
+
 `
 
 export const Card = styled.div`
@@ -54,6 +55,7 @@ export const Card = styled.div`
   padding: 2%;
   text-align: center;
   margin: 1%;
+
 `
 
 export const Recipe_imgs = styled.img`
@@ -91,18 +93,22 @@ export const Card_buttons = styled.button`
 
 export const Right_part_u = styled.div`
   background-color: white;
-  border-style: solid;
+  border: 2px solid black;
   border-radius: 25px;
   max-width: 20%;
   height: auto;
   padding: 2%;
-  margin-top: 7.8%;
+  margin-top:70px;
+  padding-left: 5%;
+  margin-right: 30px;
+
 `
 
 export const Recipes_list = styled.li`
   display: flex;
     padding: 0.5% 0 0.5% 0;
     margin-top: 5%;
+
 `
 
 export const Del_btn = styled.button`
