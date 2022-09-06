@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { AuthContext } from "../../nav/AuthContext"
 
-import { Recipes_list, Del_btn, Right_part_uu } from "../../styles/Recipespage.styled";
+import { Recipes_list, Del_btn, Right_part_uu, Recipes_name } from "../../styles/Recipespage.styled";
 
 
 const MyRecipes = ({ recipes, deletingRecipe }) => {
@@ -13,7 +13,7 @@ const MyRecipes = ({ recipes, deletingRecipe }) => {
   return (
     <>
       <Right_part_uu>
-        <h2>My Recipes</h2>
+        <Recipes_name>My Recipes</Recipes_name>
         <ul>
           {isLogin && userData ?
             (userData.data.myrecipe.map((item, index) => {
@@ -21,7 +21,7 @@ const MyRecipes = ({ recipes, deletingRecipe }) => {
                   <Recipes_list key={index}>
                     <p>{item.title}</p>
                     <Del_btn onClick={() => deletingRecipe(item.id)}>
-                      Del
+                      X
                     </Del_btn>
                   </Recipes_list>
               );
