@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useEffect, useState, useContext } from "react";
 import { AuthContext } from "../../Components/nav/AuthContext";
 import { ShoppingStyled } from "../../Components/styles/Shoppings.styled";
+import { Add, Fridge, IngredientDiv, IngredientImg, IngredientName, ListDiv, ListName, RemoveBtn, Search, WhisperDiv, WhisperUl, } from "../styles/MyFridge.styles";
+
 const ShoopinRecipe = () => {
 	const [fakeData, setFakeData] = useState([
 		{
@@ -364,9 +366,9 @@ const ShoopinRecipe = () => {
 								<div className='container' key={index}>
 									<div className='recipeHeader'>
 										<h2>{value.title}</h2>
-										<button className='btn' onClick={handleDrop}>
-											opne
-										</button>
+										<RemoveBtn className='btn' onClick={handleDrop}>
+											More
+										</RemoveBtn>
 									</div>
 									<div className='imgConatiner'>
 										<img src={value.image} alt='' className='recipeImag' />
@@ -379,9 +381,9 @@ const ShoopinRecipe = () => {
 								<div className='container' key={index}>
 									<div className='recipeHeader'>
 										<h2>{value.title}</h2>
-										<button className='btn' onClick={handleDrop}>
+										<RemoveBtn className='btn' onClick={handleDrop}>
 											X
-										</button>
+										</RemoveBtn>
 									</div>
 									<div className='imgConatiner'>
 										<img src={value.image} alt='' className='recipeImag' />
